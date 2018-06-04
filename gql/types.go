@@ -1,8 +1,8 @@
-package types
+package gql
 
 import "github.com/graphql-go/graphql"
 
-var User = graphql.NewObject(graphql.ObjectConfig{
+var user = graphql.NewObject(graphql.ObjectConfig{
 	Name: "user",
 	Fields: graphql.Fields{
 		"id": &graphql.Field{

@@ -1,14 +1,13 @@
-package fields
+package gql
 
 import (
 	"capiwara-boilerplate/gql/resolvers"
-	"capiwara-boilerplate/gql/types"
 
 	"github.com/graphql-go/graphql"
 )
 
-var UserQuery = &graphql.Field{
-	Type:        types.User,
+var userQuery = &graphql.Field{
+	Type:        user,
 	Description: "get user",
 	Resolve:     resolvers.GetUser,
 }

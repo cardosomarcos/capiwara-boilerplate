@@ -1,8 +1,6 @@
 package gql
 
 import (
-	"capiwara-boilerplate/gql/fields"
-
 	"github.com/graphql-go/graphql"
 )
 
@@ -11,7 +9,7 @@ var query = graphql.NewObject(
 		Name:        "query",
 		Description: "query",
 		Fields: graphql.Fields{
-			"user": fields.UserQuery,
+			"user": userQuery,
 		},
 	},
 )
