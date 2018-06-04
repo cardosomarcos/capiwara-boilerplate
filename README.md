@@ -5,4 +5,5 @@ Estrutura para criar novos projetos de uma forma mais rapida e sem precisar fica
 ## Todo
 
     - add docker
-    - add jwt
+    - ler config from json and env vars e remover do codigo os fixos
+    - adicionar logger: logrus

@@ -1,0 +1,8 @@
+{
+    "secretKey": "secretKey",
+    "iss": "capiwara",
+    "database": "capiwara",
+    "username": "capiwara",
+    "password": "capiwara",
+    "port": "3000"
+}
