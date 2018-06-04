@@ -67,9 +67,8 @@ func loginAuth(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	token := login.Auth()
-
-	w.Header().Set("content-type", "application/json")
-	w.Header().Set("Authorization", token)
-	w.Write(output)
+	token, err := login.Auth()
+	if err == nil {
+		w.Header().Set("Authorization", token)
+	}
 }

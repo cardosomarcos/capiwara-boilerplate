@@ -54,6 +54,6 @@ func Decode(tokenString string) (*jwtCustomClaims, error) {
 	}
 }
 
-func (login *Login) Login() (string, error) {
+func (login *Login) Auth() (string, error) {
 	return "", nil
 }
